@@ -4,7 +4,7 @@
         <element attributes="edge_encryption_enabled=true" label="What is the primary reason for the number you gave?" max_length="200" name="question" type="string"/>
         <element attributes="encode_utf8=false" label="Receiver" max_length="32" name="receiver" reference="sys_user" type="reference"/>
         <element label="Score" max_length="40" name="score" type="integer"/>
-        <element attributes="encode_utf8=false" label="Submitter" max_length="32" name="submitter" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitter" max_length="32" name="submitter" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <index name="index">
             <element name="submitter"/>
         </index>
